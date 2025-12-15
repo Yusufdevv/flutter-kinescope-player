@@ -113,7 +113,7 @@ class KinescopePlayerController {
 
   /// Close [statusController] and [timeUpdateController] stream.
   void dispose() {
-    controllerProxy..pause()..stop();
+    controllerProxy.pause();
     statusController.close();
     timeUpdateController.close();
   }
